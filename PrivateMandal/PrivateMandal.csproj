@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD719F35-0C4E-4F5D-B36A-58B14AC86610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PrivateMandal</RootNamespace>
+    <AssemblyName>PrivateMandal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeVendor.Controls">
+      <HintPath>E:\thegrouper\Grouper\obj\Debug\CodeVendor.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.337.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewMember.Designer.cs">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeEMIAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeEMIAmount.Designer.cs">
+      <DependentUpon>ChangeEMIAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.Designer.cs">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBBackup.Designer.cs">
+      <DependentUpon>DBBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMember.Designer.cs">
+      <DependentUpon>EditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense.Designer.cs">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Header.Designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanApplicationForm.Designer.cs">
+      <DependentUpon>LoanApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDetails.cs" />
+    <Compile Include="MandalDetails.cs" />
+    <Compile Include="MemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberList.Designer.cs">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembershipForm.Designer.cs">
+      <DependentUpon>MembershipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyList.Designer.cs">
+      <DependentUpon>MonthlyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyPayment.Designer.cs">
+      <DependentUpon>MonthlyPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLoan.Designer.cs">
+      <DependentUpon>NewLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewLoanApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLoanApplication.Designer.cs">
+      <DependentUpon>NewLoanApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentReceipt.Designer.cs">
+      <DependentUpon>PaymentReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingLoanAndPaymentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingLoanAndPaymentList.Designer.cs">
+      <DependentUpon>PendingLoanAndPaymentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\dstAllReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstAllReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UpdateMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMember.Designer.cs">
+      <DependentUpon>UpdateMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetaills.cs" />
+    <EmbeddedResource Include="AddNewMember.resx">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeEMIAmount.resx">
+      <DependentUpon>ChangeEMIAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePwd.resx">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBBackup.resx">
+      <DependentUpon>DBBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMember.resx">
+      <DependentUpon>EditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense.resx">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanApplicationForm.resx">
+      <DependentUpon>LoanApplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberList.resx">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembershipForm.resx">
+      <DependentUpon>MembershipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyList.resx">
+      <DependentUpon>MonthlyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyPayment.resx">
+      <DependentUpon>MonthlyPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLoan.resx">
+      <DependentUpon>NewLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLoanApplication.resx">
+      <DependentUpon>NewLoanApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentReceipt.resx">
+      <DependentUpon>PaymentReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendingLoanAndPaymentList.resx">
+      <DependentUpon>PendingLoanAndPaymentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RPT_AllPendingPayment.rdlc" />
+    <EmbeddedResource Include="Report\RPT_LoanApplicationForm.rdlc" />
+    <EmbeddedResource Include="Report\RPT_MembershipForm.rdlc" />
+    <EmbeddedResource Include="Report\RPT_MonthlyPaymentList.rdlc" />
+    <EmbeddedResource Include="Report\RPT_ExpenseReport.rdlc" />
+    <EmbeddedResource Include="Report\RPT_MonthlySummary.rdlc" />
+    <EmbeddedResource Include="Report\RPT_PaymentReceipt.rdlc" />
+    <EmbeddedResource Include="Report\RPT_PaymentReport.rdlc" />
+    <EmbeddedResource Include="Report\RPT_PendingLoanApplication.rdlc" />
+    <EmbeddedResource Include="Report\RPT_PendingLoanList.rdlc" />
+    <EmbeddedResource Include="Report\RPT_YearlyReport.rdlc" />
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMember.resx">
+      <DependentUpon>UpdateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="connection.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BajrangTextBox\BajrangTextBox.csproj">
+      <Project>{66cdea30-0f2d-47a3-b570-602bc118ddc1}</Project>
+      <Name>BajrangTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MandalLibrary\MandalLibrary.csproj">
+      <Project>{D26AD275-942E-4C86-AE54-B8A269FCC352}</Project>
+      <Name>MandalLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\dstAllReport.xsc">
+      <DependentUpon>dstAllReport.xsd</DependentUpon>
+    </None>
+    <None Include="Report\dstAllReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstAllReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\dstAllReport.xss">
+      <DependentUpon>dstAllReport.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hanuman_PNG24_copy.png" />
+    <None Include="Resources\money_bag2.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\bag.png" />
+    <None Include="Resources\pxemenu-background.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\unnamed.png" />
+    <Content Include="Configuration.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\icon_login.png" />
+    <None Include="Resources\Abstract BG_023.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
